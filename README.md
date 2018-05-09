@@ -1,6 +1,6 @@
 # README
 
-ah-rails
+ah-rails  https://travis-ci.org/wolox-training/ah-rails.svg?branch=Rubocop
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
