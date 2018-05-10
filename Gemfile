@@ -40,7 +40,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Rubocop -> Lintern
-  gem 'rubocop', require: false, '~> 0.55.0'
+  gem 'rubocop', '~> 0.55.0', require: false
 end
 
 group :development do
