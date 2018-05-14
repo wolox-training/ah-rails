@@ -1,9 +1,9 @@
 # app/authentication/authenticable_entity.rb
 class AuthenticableEntity
-  MAXIMUM_USEFUL_DATES     = 30.days
-  EXPIRATION_DATES         = 2.days
+  MAXIMUM_USEFUL_DATES = 30.days
+  EXPIRATION_DATES = 2.days
   WARNING_EXPIRATION_DATES = 5.hours
-  RENEW_ID_CHARACTERS      = 32
+  RENEW_ID_CHARACTERS = 32
   VERIFICATION_CODE_CHARACTERS = 64
 
   class << self

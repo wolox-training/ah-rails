@@ -9,7 +9,7 @@ class ApiController < ApplicationController
 
   # Serializer methods
   def default_serializer_options
-    {root: false}
+    { root: false }
   end
 
   def current_user

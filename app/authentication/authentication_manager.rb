@@ -41,22 +41,22 @@ class AuthenticationManager
   private
 
   def auth_token_expired_response
-    {body: {error: "Auth token is expired"}, code: TOKEN_EXPIRED_CODE}
+    { body: { error: 'Auth token is expired' }, code: TOKEN_EXPIRED_CODE }
   end
 
   def not_authenticated_response
-    {body: {error: "Not Authorized"}, code: NOT_AUTH_CODE}
+    { body: { error: 'Not Authorized' }, code: NOT_AUTH_CODE }
   end
 
   def invalid_verification_code_response
-    {body: {error: "Not Authorized"}, code: NOT_AUTH_CODE}
+    { body: { error: 'Not Authorized' }, code: NOT_AUTH_CODE }
   end
 
   def expiration_warning_response
     {
       body: {}, code: SUCCESS_CODE, headers: {
-        "X-Expiration-Warning" => decoded_auth_token[:expiration_date].to_s,
-      },
+        'X-Expiration-Warning' => decoded_auth_token[:expiration_date].to_s
+      }
     }
   end
 
@@ -65,16 +65,16 @@ class AuthenticationManager
   end
 
   def auth_token_warning_expiration_date_reached?
-    decoded_auth_token && decoded_auth_token.warning_expiration_date_reached?
+    decoded_auth_token&.warning_expiration_date_reached?
   end
 
   def auth_token_expired?
-    decoded_auth_token && decoded_auth_token.expired?
+    decoded_auth_token&.expired?
   end
 
   def authorization_header
     return @authorization_header if defined? @authorization_header
-    return nil unless headers["Authorization"].present?
-    @authorization_header = headers["Authorization"].split(" ").last
+    return nil unless headers['Authorization'].present?
+    @authorization_header = headers['Authorization'].split(' ').last
   end
 end
