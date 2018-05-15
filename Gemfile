@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.0'
 
+gem 'versionist'
+gem 'jwt'
+
 # Add devise for auth
 gem 'devise', '~> 4.4.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
