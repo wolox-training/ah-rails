@@ -41,7 +41,7 @@ describe Book, type: :model do
   let(:title)     { Faker::Book.title }
   let(:image)     { 'image.png' }
   let(:publisher) { Faker::Book.publisher }
-  let(:year)      { Date.today.year }
+  let(:year)      { Time.current.year }
 
   # Validations in class must be ok
   it do
