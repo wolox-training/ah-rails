@@ -5,6 +5,10 @@ ruby '2.4.0'
 
 # Add devise for auth
 gem 'devise', '~> 4.4.3'
+# Add devise token authentication
+gem 'devise_token_auth', '~> 0.1.43'
+# Add omniauth
+gem 'omniauth', '~> 1.8.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
 # Use postgresql as the database for Active Record
