@@ -262,12 +262,9 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   database_cleaner (~> 1.7.0)
   devise (~> 4.4.3)
-<<<<<<< HEAD
   factory_bot_rails (~> 4.0)
   faker (~> 1.8.7)
-=======
   devise_token_auth (~> 0.1.43)
->>>>>>> devise_token_auth
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   omniauth (~> 1.8.1)
