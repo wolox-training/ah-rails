@@ -3,6 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.0'
 
+# Pagination for responses
+# gem 'wor-paginate', '~> 0.1.1'
+gem 'kaminari', '~> 1.1.1'
+# Serializer
+gem 'active_model_serializers', '~> 0.10.7'
 # Add devise for auth
 gem 'devise', '~> 4.4.3'
 # Add devise token authentication
