@@ -1,16 +1,7 @@
 require 'rails_helper'
 
-# :genre, :author, :image, :title, :publisher, :year
-
 describe Book, type: :model do
   subject(:book) do
-    # create(:book, genre: 'Literatura fantastica',
-    #               author: 'J.R.R. Tolkien',
-    #               image: 'image.png',
-    #               title: 'El Senor de los Anillos',
-    #               publisher: 'George Allen',
-    #               year: '1954')
-    # create(:book)
     Book.new(
       genre: genre, author: author, image: image, title: title, publisher: publisher, year: year
     )
