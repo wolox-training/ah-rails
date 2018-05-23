@@ -1,16 +1,10 @@
 FactoryBot.define do
   factory :book do
-    #   let(:genre)     { Faker::Book.genre }
-    #   let(:author)    { Faker::Book.author }
-    #   let(:title)     { Faker::Book.title }
-    #   let(:image)     { 'image.png' }
-    #   let(:publisher) { Faker::Book.publisher }
-    #   let(:year)      { Date.today.year }
-    genre 'Literatura fantastica'
-    author 'J.R.R. Tolkien'
-    image 'image.png'
-    title 'El Senor de los Anillos'
-    publisher 'George Allen'
-    year '1954'
+    genre Faker::Book.genre
+    author Faker::Book.author
+    image Faker::Book.title
+    title 'image.png'
+    publisher Faker::Book.publisher
+    year Time.current.year
   end
 end

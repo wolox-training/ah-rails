@@ -27,3 +27,9 @@
 
 # Ignore test folder
 test/
+
+# Ignore vscode config
+.vscode/
+
+# Ignore TAGS file
+TAGS 
