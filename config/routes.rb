@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       mount_devise_token_auth_for 'User', at: 'auth'
     end
   end
-
+  
   devise_scope :user do
     get '/books/:id' => 'books#show'
     get '/books' => 'books#index'
