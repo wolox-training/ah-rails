@@ -7,8 +7,5 @@ class ApplicationController < ActionController::Base
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: %i[first_name last_name registration])
-    # devise_parameter_sanitizer.for(:sign_up) { |u|
-    #     u.permit(:first_name, :last_name, :registration)
-    # }
   end
 end
